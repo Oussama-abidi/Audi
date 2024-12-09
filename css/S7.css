@@ -25,13 +25,9 @@ body {
     font-size: 1.2rem;
     margin-top: 10px;
   }
-  
-  /* Carousel */
   .carousel-inner img {
     border: 2px solid #333;
   }
-  
-  /* Content Section */
   .container h2 {
     color: #007bff;
   }
@@ -51,8 +47,6 @@ body {
     font-size: 1rem;
     padding: 10px 20px;
   }
-  
-  /* Extensions Section */
   .extensions-section {
     background-color: #f1f1f1;
     padding: 50px 20px;
@@ -83,8 +77,6 @@ body {
     font-size: 0.9rem;
     color: #666;
   }
-  
-  /* Footer */
   footer {
     background-color: #333;
     color: white;
