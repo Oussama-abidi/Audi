@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audi RS6</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/RS6.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="Home.html">Audi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RS6</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="R8.html">R8</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="s7.html">S7</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">Login</a></li>
+            <li id="google_translate_element"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="rs6-header text-center">
+    <h1>Experience the Power of the Audi RS6</h1>
+    <p class="tagline">Unparalleled Performance, Sophisticated Design</p>
+  </header>
+
+  <!-- Content Section -->
+  <section class="container my-5">
+    <div class="row">
+      <!-- Left Column: Image Slider -->
+      <div class="col-md-6">
+        <div id="rs6Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../imgs/RS6.jpg" class="d-block w-100 rounded" alt="Audi RS6 Exterior" width="300" height="550">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/gg.jpg" class="d-block w-100 rounded" alt="Audi RS6 Interior" width="300" height="550">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/az.jpg" class="d-block w-100 rounded" alt="Audi RS6 Performance" width="300" height="550">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#rs6Carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#rs6Carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Column: Description and Price -->
+      <div class="col-md-6">
+        <h2>Why Choose the Audi RS6?</h2>
+        <p>The Audi RS6 combines ultimate power with modern luxury. Equipped with a 4.0 TFSI V8 engine, it delivers an exhilarating 591 horsepower and seamless acceleration. Its sleek design and advanced technology create an unmatched driving experience.</p>
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Max Speed: 190 mph</li>
+          <li>0-60 mph: 3.5 seconds</li>
+          <li>Quattro All-Wheel Drive</li>
+          <li>Bang & Olufsen Sound System</li>
+          <li>High-performance Sport Suspension</li>
+        </ul>
+        <h3 class="text-danger">Starting Price: $116,500</h3>
+        <button id="orderButton" class="btn btn-success btn-lg mt-3">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extensions Section -->
+  <section class="extensions-section text-center py-5">
+    <h2>Available Extensions</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../imgs/fiber.jpg" class="img-fluid rounded" alt="Extension 1" height="200" width="200">
+          <h4>Carbon Fiber Package</h4>
+          <p>Enhance the sporty aesthetics with premium carbon fiber trim.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="../imgs/exhaust.jpg" class="img-fluid rounded" alt="Extension 2">
+          <h4>Performance Exhaust</h4>
+          <p>Unleash the full potential of the RS6 with a dynamic exhaust system.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="../imgs/interior.jpg" class="img-fluid rounded" alt="Extension 3">
+          <h4>Luxury Interior Package</h4>
+          <p>Experience unparalleled comfort with premium leather and ambient lighting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Audi AG. All rights reserved. <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const isLoggedIn = false;
+    document.getElementById("orderButton").addEventListener("click", () => {
+      if (isLoggedIn) {
+        window.location.href = "order.html";
+      } else {
+        alert("You must be logged in to order the Audi R8.");
+        window.location.href = "account.html";
+      }
+    });
+  </script>
+</body>
+</html>
