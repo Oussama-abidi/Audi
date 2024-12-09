@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4 {
+    color:rgb(108, 4, 4);
+  }
+  .r8-header {
+    background-image: url('../imgs/download.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 50px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .r8-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .r8-header .tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+    .carousel-inner img {
+    border: 2px solid #333;
+  }
+  .container h2 {
+    color: #007bff;
+  }
+  
+  .container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+  }
+  
+  .text-danger {
+    color: #dc3545 !important;
+  }
+  
+  button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .extensions-section {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+  }
+  
+  .extensions-section h2 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .extensions-section .row .col-md-4 {
+    margin-bottom: 20px;
+  }
+  
+  .extensions-section .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .extensions-section h4 {
+    margin-top: 15px;
+    color: #007bff;
+  }
+  
+  .extensions-section p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

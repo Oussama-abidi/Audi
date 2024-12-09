@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audi S7</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/S7.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="Home.html">Audi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="RS6.html">RS6</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="R8.html">R8</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">S7</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">Login</a></li>
+            <li id="google_translate_element"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="s7-header text-center">
+    <h1>Unleash Elegance and Performance with the Audi S7</h1>
+    <p class="tagline">Sporty Style, Luxurious Comfort</p>
+  </header>
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="s7Carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../imgs/xx.avif" class="d-block w-100 rounded" alt="Audi S7 Exterior" width="300" height="550">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/oo.jpg" class="d-block w-100 rounded" alt="Audi S7 Interior" width="300" height="550">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/ww.jpg" class="d-block w-100 rounded" alt="Audi S7 Performance" width="300" height="550">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#s7Carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#s7Carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2>Why Choose the Audi S7?</h2>
+        <p>The Audi S7 is a masterful blend of elegance and performance, featuring a powerful 2.9L V6 engine paired with a mild-hybrid system. Its bold design and advanced tech promise a driving experience like no other.</p>
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Max Speed: 155 mph</li>
+          <li>0-60 mph: 4.5 seconds</li>
+          <li>Quattro All-Wheel Drive</li>
+          <li>Sport Adaptive Air Suspension</li>
+          <li>Bang & Olufsen 3D Sound System</li>
+        </ul>
+        <h3 class="text-danger">Starting Price: $83,500</h3>
+        <button id="orderButton" class="btn btn-success btn-lg mt-3">Order Now</button>
+      </div>
+    </div>
+  </section>
+  <section class="extensions-section text-center py-5">
+    <h2>Available Extensions</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../imgs/carbon.jpg" class="img-fluid rounded" alt="Extension 1" height="200" width="200">
+          <h4>Carbon Fiber Exterior</h4>
+          <p>Enhance the S7’s sporty aesthetic with exclusive carbon fiber accents.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="../imgs/sound.jpg" class="img-fluid rounded" alt="Extension 2">
+          <h4>Advanced Sound System</h4>
+          <p>Immerse yourself in music with the upgraded Bang & Olufsen system.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="../imgs/wheel.jpg" class="img-fluid rounded" alt="Extension 3">
+          <h4>Custom Wheel Package</h4>
+          <p>Stand out with 21-inch sport wheels for a more dynamic presence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Audi AG. All rights reserved. <a href="contact.html">Contact Us</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const isLoggedIn = false;
+    document.getElementById("orderButton").addEventListener("click", () => {
+      if (isLoggedIn) {
+        window.location.href = "order.html";
+      } else {
+        alert("You must be logged in to order the Audi S7.");
+        window.location.href = "account.html";
+      }
+    });
+  </script>
+</body>
+</html>

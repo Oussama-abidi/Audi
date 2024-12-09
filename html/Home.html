@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Audi</title>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Audi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="RS6.html">RS6</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="R8.html">R8</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="s7.html">S7</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">Login</a></li>
+            <li id="google_translate_element"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="video-section position-relative bg-dark text-white">
+    <video id="background-video" class="w-100 h-100" autoplay loop muted>
+      <source src="../vids/rs7vd.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content position-absolute top-0 w-100 text-white px-3">
+      <center><h1 class="welcome-text fw-bold">Audi</h1></center>
+      <p class="tagline">Owning an Audi:<br/> Luxury, Performance & Prestige</p>
+    </div>
+    <button id="video-control" class="btn btn-outline-light position-absolute bottom-0 start-0 m-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+      <span id="control-icon">||</span>
+    </button>
+  </div>
+
+  <div class="contentt">
+    <h1>Explore our innovative car models and technologies.</h1>
+  </div>
+  <div class="image-links container mt-5">
+    <div class="row text-center">
+      <div class="col-md-4 position-relative">
+        <a href="RS6.html">
+          <img src="../imgs/AudiRS6.jpg" alt="Image 1" class="img-fluid hover-effect">
+          <div class="image-text">Audi RS6.</div>
+        </a>
+      </div>
+      <div class="col-md-4 position-relative">
+        <a href="R8.html">
+          <img src="../imgs/download.jpg" alt="Image 2" class="img-fluid hover-effect">
+          <div class="image-text">Audi R8.</div>
+        </a>
+      </div>
+      <div class="col-md-4 position-relative">
+        <a href="s7.html">
+          <img src="../imgs/audis7.jpg" alt="Image 3" class="img-fluid hover-effect">
+          <div class="image-text">Audi s7.</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <section id="interactive-feature">
+    <div class="container">
+      <h2 class="text-center mb-5">Explore Our Interactive Audi Experience</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="content-item video" data-bs-toggle="modal" data-bs-target="#videoModal1">
+            <video class="video-item" src="../vids/audi2.mp4" muted loop></video>
+            <div class="overlay">
+              <span class="play-icon">▶</span>
+              <p class="text">Luxury Performance</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="content-item image" data-bs-toggle="modal" data-bs-target="#imageModal1">
+            <img src="../imgs/audi.jpg" alt="Audi car" class="img-fluid" />
+            <div class="overlay">
+              <p class="text">Drive with Style</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="content-item video" data-bs-toggle="modal" data-bs-target="#videoModal2">
+            <video class="video-item" src="../vids/audi.mp4" muted loop></video>
+            <div class="overlay">
+              <span class="play-icon">▶</span>
+              <p class="text">Power Meets Precision</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <video width="100%" controls>
+              <source src="../vids/audi2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <video width="100%" controls>
+              <source src="../vids/audi.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="../imgs/aa.webp" alt="Audi car" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="awards" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Audi's Recognition and Awards</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="../imgs/download.png" alt="Award 1" class="img-fluid mb-3" />
+          <h4>World Car of the Year</h4>
+          <p>Audi was awarded the prestigious World Car of the Year for excellence in performance, design, and innovation.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="../imgs/images.jpg" alt="Award 2" class="img-fluid mb-3" />
+          <h4>Best Luxury Sedan</h4>
+          <p>Audi's A8 was named the best luxury sedan for its elegant design and state-of-the-art technology.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="../imgs/bb.jpg" alt="Award 3" class="img-fluid mb-3" />
+          <h4>Innovation in Design</h4>
+          <p>Recognized for innovation in automotive design, Audi continues to push the boundaries of style and performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer class="text-center py-3">
+  <section id="social-media-box">
+    <div class="container text-center">
+      <h3>Connect with Us</h3>
+      <div class="social-box">
+        <a href="https://www.facebook.com/audi" target="_blank" class="social-link facebook" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon">
+            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.847V11.09h2.973V8.413c0-2.948 1.796-4.556 4.416-4.556 1.257 0 2.34.093 2.654.135v3.076l-1.82.001c-1.428 0-1.703.678-1.703 1.67v2.19h3.417l-.446 3.617h-2.97V24h5.818C23.407 24 24 23.407 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/audi" target="_blank" class="social-link instagram" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.347 3.608 1.322.975.975 1.26 2.242 1.322 3.608.058 1.266.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.347 2.633-1.322 3.608-.975.975-2.242 1.26-3.608 1.322-1.266.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.347-3.608-1.322-.975-.975-1.26-2.242-1.322-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.347-2.633 1.322-3.608C4.53 2.58 5.797 2.295 7.163 2.233 8.429 2.175 8.808 2.163 12 2.163zm0-2.163C8.685 0 8.259.012 7.052.072 5.848.132 4.703.347 3.725 1.325c-.978.978-1.193 2.123-1.253 3.327C2.012 5.741 2 6.167 2 9.482V14.52c0 3.315.012 3.741.072 4.948.06 1.204.275 2.349 1.253 3.327.978.978 2.123 1.193 3.327 1.253 1.207.06 1.633.072 4.948.072s3.741-.012 4.948-.072c1.204-.06 2.349-.275 3.327-1.253.978-.978 1.193-2.123 1.253-3.327.06-1.207.072-1.633.072-4.948s-.012-3.741-.072-4.948c-.06-1.204-.275-2.349-1.253-3.327C20.259.347 19.113.132 17.948.072 16.741.012 16.315 0 12 0z" />
+            <circle cx="12" cy="12" r="3.5" />
+          </svg>
+        </a>
+        <a href="https://www.twitter.com/audi" target="_blank" class="social-link twitter" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon">
+            <path d="M23.954 4.569c-.885.392-1.83.654-2.825.775a4.914 4.914 0 0 0 2.163-2.723 9.752 9.752 0 0 1-3.127 1.195 4.918 4.918 0 0 0-8.384 4.482 13.94 13.94 0 0 1-10.125-5.14 4.926 4.926 0 0 0 1.523 6.573 4.9 4.9 0 0 1-2.225-.616c-.054 2.281 1.581 4.415 3.946 4.89a4.902 4.902 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.416 9.867 9.867 0 0 1-6.102 2.103c-.397 0-.79-.023-1.17-.067a13.955 13.955 0 0 0 7.548 2.209c9.057 0 14.01-7.496 14.01-13.986 0-.21 0-.423-.015-.635a9.936 9.936 0 0 0 2.46-2.548z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  </p>
+      &copy; 2024 Audi. All Rights Reserved.
+    </footer>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../java/home.js"></script>
+</body>
+</html>

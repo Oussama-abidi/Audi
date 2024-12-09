@@ -1,0 +1,312 @@
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #cccccc !important;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+#google_translate_element {
+  margin-left: auto;
+  color: white;
+}
+
+.goog-te-combo {
+  border: none;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #000;
+}
+
+.video-section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  object-fit: cover;
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif; 
+  top: 20px;
+  left: 20px;
+  color: grey;
+}
+
+.tagline {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif; 
+  position: absolute; 
+  top: 150px; 
+  left: 20px; 
+  max-width: 50%; 
+}
+.login-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+.contentt {
+  padding: 50px;
+  background-color: white;
+  text-align: center;
+}
+/* Image hover effect */
+.image-links .hover-effect {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  border-radius: 15px; /* Rounded corners for images */
+  overflow: hidden; /* Ensures rounded edges are respected */
+}
+
+/* Text Styling on Images */
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Text color */
+  font-size: 24px; /* Font size */
+  font-weight: bold;
+  text-transform: uppercase; /* Optional: makes the text all caps for modern look */
+  letter-spacing: 1px; /* Slightly spaced letters */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+/* Hover Effect for Image (without changing the text) */
+.image-links .hover-effect:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+/* Style for Awards Section */
+#awards {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#awards h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#awards .col-md-4 {
+  margin-bottom: 30px;
+}
+
+#awards .col-md-4 img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#awards .col-md-4 img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#awards h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-top: 15px;
+}
+
+#awards p {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: #555;
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  #awards .col-md-4{
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  #awards h2{
+      font-size: 28px;
+  }
+}
+/* Style for the Interactive Section */
+#interactive-feature {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+
+#interactive-feature h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.content-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: block;
+}
+
+.content-item img,
+.content-item video {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.content-item:hover img,
+.content-item:hover video {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  text-align: center;
+}
+
+.content-item:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay .play-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.overlay .text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Modal Styling */
+.modal-dialog {
+  max-width: 800px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  #interactive-feature h2 {
+    font-size: 28px;
+  }
+
+  .content-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9rem;
+}
+#social-media-box {
+  padding: 40px 0;
+  background-color:black;
+  margin-right: 70%;
+}
+
+#social-media-box h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.social-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.social-link.facebook {
+  background-color: #4267B2;
+}
+
+.social-link.instagram {
+  background-color: #C13584;
+}
+
+.social-link.twitter {
+  background-color: #1DA1F2;
+}
+

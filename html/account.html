@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Audi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/acount.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Audi - Connect</h1>
+  </header>
+  <div class="connection-container">
+    <div class="login-form-container">
+      <h2>Login to Your Account</h2>
+      <form class="login-form" action="../php/login.php" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+      you don't have an account?<a href="signup.html">sign up</a>
+    </div>
+    <div class="images-container">
+      <img src="../imgs/Audi A8 L 2022.jpg" alt="Audi Image 1" width="500" height="500">
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 Audi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
